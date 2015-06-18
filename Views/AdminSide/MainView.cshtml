@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "MainView";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron">
+    <label class="lbl-cls2">-----------Admin-----------</label>
+</div>
+<br />
+<br />
+<table class="table table-bordered">
+    <tr>
+        <td>
+            <h3 class="lbl-cls3">Sign In</h3>
+            <form method="post" action="/AdminSide/AdminView">
+                User Name
+                <input type="text" name="UserName" />
+                <br />
+                Passwoord
+                <input type="password" name="Password" />
+                <br />
+                <button type="submit" class="btn-danger btn-cls4">Sign In</button>
+            </form>
+        </td>
+    </tr>
+</table>

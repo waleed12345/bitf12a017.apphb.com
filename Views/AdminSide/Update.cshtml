@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "AddSongs";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron">
+    <label class="lbl-cls2">-----------Admin-----------</label>
+</div>
+<br />
+<br />
+
+<table class="table table-bordered">
+    <tr>
+        <td>
+            <h3 class="lbl-cls3">Delete Songs</h3>
+            <form method="post" action="/AdminSide/DeleteSongs">
+                Song Name <input type="text" style="color: black" name="source"/>
+                Property <input type="text" style="color: black" name="property"/>
+                Value <input type="text" style="color: black" name="value"/>
+
+                <button type="submit" class="btn-danger btn-cls4">Update Song</button>
+            </form>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            <h3 class="lbl-cls3">Delete Source</h3>
+            <form method="post" action="/AdminSide/AddMovies" enctype="multipart/form-data">
+                Source Name
+                <input type="text" style="color: black" name="Name" />
+                Property <input type="text" style="color: black" name="property"/>
+                Value <input type="text" style="color: black" name="value"/>
+                <button type="submit" class="btn-danger btn-cls4">Delete Source</button>
+            </form>
+        </td>
+    </tr>
+</table>
+
+

@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/views/shared/_Layout2.cshtml";
+    
+}
+
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron">
+    <label class="lbl-cls2">-----------SignIn----------</label>
+
+</div>
+<br />
+<br />
+<br />
+<br />
+@if (Model == false)
+{
+    <label>Invalid UserName or Password</label>
+    <br />
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                <h3 class="lbl-cls3">Sign In</h3>
+                <form method="post" action="/Register/Signin">
+                User Name
+                <input style="color: black" type="text" name="UserName" />
+                <br />
+                Password
+                <input class="txt3" style="color: black" type="password" name="Password" />
+                <br />
+                <button type="submit" class="btn-danger btn-cls4">Sign In</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+}
+@if (Model == true)
+{
+    <a href="/Hollywood/HollywoodPageClient">
+        <button type="button" class="btn-danger btn-cls1">Hollywood</button>
+    </a>
+    <a href="/Bollywood/BollywoodPageClient">
+        <button type="button" class="btn-danger">Bollywood</button>
+    </a>
+    <a href="/Lollywood/LollywoodPageClient">
+        <button type="button" class="btn-danger">Lollywood</button>
+    </a>
+    <a href="/Albums/AlbumsPageClient">
+        <button type="button" class="btn-danger">Albums</button>
+    </a>
+    <a href="/Artists/ArtistsPageClient">
+        <button type="button" class="btn-danger">Artists</button>
+    </a>
+}

@@ -1,0 +1,35 @@
+﻿@{
+    Layout = "~/views/shared/_Layout1.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron">
+    <label class="lbl-cls2">-----------SignUp----------</label>
+</div>
+<br />
+<br />
+@{if (@Model != null){
+    <label class="lbl-cls1">Your Account Successfully Created</label>}
+ else{
+    <label class="lbl-cls1">Your Account Not Created . Sorry</label>}
+}
+
+<table class="table table-bordered">
+    <tr>
+        <td>
+            <h3 class="lbl-cls3">Sign In</h3>
+            <form method="post" action="/Register/Signin">
+                User Name
+                <input style="color:black" type="text" name="UserName" />
+                <br />
+                Password
+                <input class="txt3" style="color:black" type="password" name="Password" />
+                <br />
+                <button type="submit" class="btn-danger btn-cls4">Sign In</button>
+            </form>
+        </td>
+    </tr>
+</table>

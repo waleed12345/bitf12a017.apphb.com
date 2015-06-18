@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/views/shared/_Layout1.cshtml";
+}
+
+
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron">
+    <label class="lbl-cls2">-----------Search----------</label>
+</div>
+<br />
+<br />
+@{if (ViewBag == null){
+    <label class="lbl-cls1">No Item Matched Your Request</label>}
+ else{
+    <label class="lbl-cls1">You Have Seached For '@ViewBag.x'</label>}
+}

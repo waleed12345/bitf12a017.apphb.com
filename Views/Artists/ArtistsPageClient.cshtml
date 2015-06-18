@@ -1,0 +1,66 @@
+﻿@{
+    Layout = "~/views/shared/_Layout2.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+<div class="jumbotron">
+    <label class="lbl-cls2">-----------Artists---------</label>
+    <label>Search Song According to Starting Alphabet of the Artist</label>
+</div>
+<br />
+<br />
+<br />
+<a href="/Hollywood/HollywoodPageClient">
+    <button type="button" class="btn-danger btn-cls1">Hollywood</button>
+</a>
+<a href="/Bollywood/BollywoodPageClient">
+    <button type="button" class="btn-danger">Bollywood</button>
+</a>
+<a href="/Lollywood/LollywoodPageClient">
+    <button type="button" class="btn-danger">Lollywood</button>
+</a>
+<a href="/Albums/AlbumsPageClient">
+    <button type="button" class="btn-danger">Albums</button>
+</a>
+<a href="/Artists/ArtistsPageClient">
+    <button type="button" class="btn-danger">Artists</button>
+</a>
+<br />
+<br />
+<form method="post" action="/Artists/SearchClient">
+    <select id="drp1" class="drp-menu1" name="keyword">
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+      <option>D</option>
+      <option>E</option>
+      <option>F</option>
+      <option>G</option>
+      <option>H</option>
+      <option>I</option>
+      <option>J</option>
+      <option>K</option>
+      <option>L</option>
+      <option>M</option>
+      <option>N</option>
+      <option>O</option>
+      <option>P</option>
+      <option>Q</option>
+      <option>R</option>
+      <option>S</option>
+      <option>T</option>
+      <option>U</option>
+      <option>V</option>
+      <option>W</option>
+      <option>X</option>
+      <option>Y</option>
+      <option>Z</option>
+    </select>
+
+    <br />
+    <br />
+    <button type="submit" class="btn-danger btn-cls5" value="Search">Search</button>
+</form>
